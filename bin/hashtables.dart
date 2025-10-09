@@ -14,7 +14,16 @@ void main() {
   print(foundindex);
 
 
-final studentList = List<Student?>.filled(300000, null, growable: false);
+final studentList = List<Student?>.filled(3000000, null);
+studentList[2024007] = Student(2024007, 'Valerii');
+studentList[2024078] = Student(2024078, 'Aisha');
+studentList[20240077] = Student(20240077, 'Aldar');
+studentList[20240017] = Student(20240017, 'Mariam');
+studentList[20240027] = Student(20240027, 'Daniil');
+studentList[20240037] = Student(20240037, 'Sofia');
+studentList[20240047] = Student(20240047, 'Liam');
+studentList[20240057] = Student(20240057, 'Olivia');
+studentList[20240067] = Student(20240067, 'Noah');
   Student(2024007, 'Valerii'),
   Student(2024078, 'Aisha'),
   Student(20240077, 'Aldar'),
