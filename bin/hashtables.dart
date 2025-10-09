@@ -1,41 +1,40 @@
 import 'package:hashtables/binary_search.dart';
-import 'package:hashtables/linear_search.dart';
 import 'package:hashtables/hash_search.dart';
+import 'package:hashtables/linear_search.dart';
 
 void main() {
   final myList = [42, 3, 10, 7, 28, 149, 0, 3, 25, 7, 1];
-  var foundindex = linearSearch(myList, 28);
-  print(foundindex);
+  var foundIndex = linearSearch(myList, 28);
+  print(foundIndex);
 
   myList.sort();
   print(myList); // [0, 1, 3, 3, 7, 7, 10, 25, 28, 42, 149]
 
-  foundindex = binarySearch(myList, 1);
-  print(foundindex);
+  foundIndex = binarySearch(myList, 1);
+  print(foundIndex);
 
+  final studentList = List<Student?>.filled(3000000, null);
+  studentList[2024078] = Student(2024078, 'AZ1');
+  studentList[2024077] = Student(2024077, 'AZ2');
+  studentList[2021018] = Student(2021018, 'AD');
+  studentList[2023139] = Student(2023139, 'BB');
+  studentList[2025068] = Student(2025068, 'BS');
+  studentList[2024008] = Student(2024008, 'DD');
+  studentList[2024095] = Student(2024095, 'ES1');
+  studentList[2024012] = Student(2024012, 'ED1');
+  studentList[2024054] = Student(2024054, 'EB');
+  studentList[2024081] = Student(2024081, 'ED2');
+  studentList[2024111] = Student(2024111, 'ES2');
+  studentList[2024059] = Student(2024059, 'MI');
+  studentList[2024025] = Student(2024025, 'MB');
+  studentList[2024020] = Student(2024020, 'MC');
+  studentList[2023002] = Student(2023002, 'NM');
+  studentList[2022081] = Student(2022081, 'TG');
+  studentList[2024085] = Student(2024085, 'TK');
+  studentList[2023096] = Student(2023096, 'TA');
+  studentList[2022007] = Student(2022007, 'UM');
+  studentList[2024007] = Student(2024007, 'VG');
 
-final studentList = List<Student?>.filled(3000000, null);
-studentList[2024007] = Student(2024007, 'Valerii');
-studentList[2024078] = Student(2024078, 'Aisha');
-studentList[20240077] = Student(20240077, 'Aldar');
-studentList[20240017] = Student(20240017, 'Mariam');
-studentList[20240027] = Student(20240027, 'Daniil');
-studentList[20240037] = Student(20240037, 'Sofia');
-studentList[20240047] = Student(20240047, 'Liam');
-studentList[20240057] = Student(20240057, 'Olivia');
-studentList[20240067] = Student(20240067, 'Noah');
-  Student(2024007, 'Valerii'),
-  Student(2024078, 'Aisha'),
-  Student(20240077, 'Aldar'),
-  Student(20240017, 'Mariam'),
-  Student(20240027, 'Daniil'),
-  Student(20240037, 'Sofia'),
-  Student(20240047, 'Liam'),
-  Student(20240057, 'Olivia'),
-  Student(20240067, 'Noah'),
-;
-
-
-final studentName = studentSearch(studentList, 20240037);
-print(studentName);
+  final studentName = studentSearch(studentList, 2024008);
+  print(studentName);
 }
