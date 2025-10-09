@@ -12,9 +12,9 @@ void main() {
 
   foundindex = binarySearch(myList, 1);
   print(foundindex);
-}
 
-final studentList = [
+
+final studentList = List<Student?>.filled(300000, null, growable: false);
   Student(2024007, 'Valerii'),
   Student(2024078, 'Aisha'),
   Student(20240077, 'Aldar'),
@@ -24,4 +24,9 @@ final studentList = [
   Student(20240047, 'Liam'),
   Student(20240057, 'Olivia'),
   Student(20240067, 'Noah'),
-];
+;
+
+
+final studentName = studentSearch(studentList, 20240037);
+print(studentName);
+}
